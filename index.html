@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="surveyform.css">
+	<h1 id="title">Survey Form</h1>
+</head>
+<body><center>
+<div id="container" align="center">
+	<p id="description">
+		Please fill out the survey below to help us improve service
+	</p>
+	<form id="survey-form">
+		<!--Aligning the items in one div and floating both divs creates two columns-->
+			<div id="sub" class="blue" align="right">
+				<p><label id="name-label">Name</label></p>
+				<p><label id="email-label">Email</label></p>
+				<p><label id="number-label">Number</label></p>
+				<p>Do you consider yourself normal?</p><br id="rat">		
+				<p><label id="rate-label">On a scale of one to five, rate how crazy you are</label></p><br>
+				<p><label id="drugs-label">What drugs have you used?</label></p><br>
+				<p><label id="drugs-label">Tell me about your craziest experience?</label></p><br>
+			</div>
+			<div id="sub" class="red" align="left">
+				<p><input type="text" name="name" id="name" placeholder="Enter your name" required="This is not a valid name"></p>
+				<p><input type="email" name="email" id="email" placeholder="Enter your email" required="This is not a valid email"></p>
+				<p><input type="number" name="number" id="number" placeholder="Enter your age" min="10" max="105" required="Number exceeds range"></p>
+				<p><select id="dropdown">
+					<option value="Yes">Yes</option>
+					<option value="null" selected>Select One</option>
+					<option value="No">No</option>
+					</select>
+				</p>
+				<input type="radio" name="radio" id="diff" value="1">1
+				<input type="radio" name="radio" id="diff" value="2">2
+				<input type="radio" name="radio" id="diff" value="3">3
+				<input type="radio" name="radio" id="diff" value="4">4
+				<input type="radio" name="radio" id="diff" value="5">5<br id="rat">
+				<input type="checkbox" name="checkbox" id="diff" value="1">Alcohol
+				<input type="checkbox" name="checkbox" id="diff" value="0">Bhang
+				<input type="checkbox" name="checkbox" id="diff" value="2">Other<br id="rat">
+
+				<textarea placeholder="Enter something crazy"></textarea><br id="rat">
+				<button id="submit" name="submit">Submit</button>
+			</div>
+	</form>
+</div></center>
+</body>
+</html>

@@ -1,0 +1,101 @@
+body {
+	background-color: #000010;
+	color: white;
+	text-align: center;
+	font-size: 25px;
+}
+
+h1 {
+	color: white;
+	text-align: center;
+	font-size: 50px;
+	font-family: monospace;
+}
+
+#container {
+	display: grid;
+	width: 70%;
+	height: 100%;
+	margin: 0.25%;
+	border-radius: 20px;
+	background-color: #111111;
+	justify-content: center;
+	text-overflow: wrap;
+}
+
+#survey-form {
+	align-content: center;
+	height: 90%;
+	width: 100%;
+}
+
+#sub {
+	width: 45%;
+    float: left;
+    padding: 2.5%;
+    height: 90%;
+}
+
+#sub2 {
+	float: center;
+}
+.blue {
+	line-height: 35px;
+}
+input, select {
+	height: 30px;
+	width: 95%;
+	background-color: white;
+	padding-left: 5%;
+	border-radius: 5px;
+	border-width: 1px;
+}
+
+#dropdown {
+	height: 70px;
+}
+#diff {
+	height: 20px;
+	width: 45%;
+	display: inline-block;
+	background-color: white;
+	padding-left: 5%;
+	border-radius: 5px;
+	border-width: 1px;
+}
+
+#rat {
+	display: block; /* makes it have a width */
+    content: ""; /* clears default height */
+    margin-top: 20px;/*Sets height*/
+}
+
+textarea {
+	height: 100px;
+	width: 100%;
+}
+button {
+	height: 50px;
+	width: 70%;
+	font-size: 30px;
+	font-family: "times new roman"
+}
+
+@media (max-width: 700px){
+	#container {
+		display: grid;
+		width: 95%;
+		height: 100%;
+		margin: 0.25%;
+		border-radius: 20px;
+		background-color: #111111;
+		justify-content: center;
+		text-overflow: wrap;
+	}
+	#sub {
+		width: 45%;
+	    float: left;
+	    padding: 2.5%;
+	    height: 90%;
+	}
+}
